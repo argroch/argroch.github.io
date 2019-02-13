@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Geo Quiz!</title>
+	<link rel="stylesheet" href="assets/stylesheets/bootstrap.min.css" />
+	<link rel="stylesheet" href="assets/stylesheets/darkly.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/stylesheets/styles.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+
+	<nav class="navbar navbar-default" id="geonav">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="index.html">Home</a>
+	    </div>
+
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rails Projects <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="http://marta-app.herokuapp.com" target="_blank">MARTA</a></li>
+	            <li><a href="http://techtalentstore.herokuapp.com" target="_blank">Tech Talent Store</a></li>
+	            <li><a href="http://yourscene.herokuapp.com" target="_blank">Your Scene</a></li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">JavaScript Projects <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="roshambo.html">Rock, Paper, Scissors</a></li>
+	            <li><a href="fifteenpuzzle.html">15 Puzzle</a></li>
+		          <li><a href="geoquiz.html">GeoQuiz</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+
+	      <ul class="nav navbar-nav navbar-right">
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Connect With Me <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="https://twitter.com/ar_groch" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+	            <li><a href="http://github.com/doc-khateer" target="_blank"><i class="fa fa-github"></i> GitHub</a></li>
+	            <li><a href="https://www.linkedin.com/in/aaron-groch-2256b38" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+	<div class="jumbotron" id="quiz_page_header">
+		<div class="container">
+			<h1>GeoQuiz: Test your GeoKnowledge!</h1>
+			<p>May add more quizzes down the road, but they'd all generally work like this one...</em></p>
+		</div>
+	</div>
+	<div class="container" id="states_quiz">
+		<div class="row">
+			<div class="col-md-8">
+				<h3>Name The States!</h3>
+				<p class="instructions">You have 3 minutes to name all 50 states. If you can't name them all and there's still time left on the clock, hit "That's All I Know."</p>
+				<p><button onclick="startStatesQuiz()" id="quiz_start" class="btn btn-success">Start Quiz</button><span id="time"></span></p>
+
+				<!-- <p class="timer" id="states_quiz_timer"></p> -->
+				<!-- <button id="start_btn" class="btn btn-success">Begin Quiz</button> -->
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<div id="quiz" class="invisible">
+			<p>
+				<input type="text" id="my_input" oninput="statesQuiz()">
+			</p>
+			<p>
+				<button id="stop_quiz" class="btn btn-warning btn-sm invisible" onclick="stopQuiz()">That's All I Know!</button>
+			</p>
+			<p id="game_end"></p>
+			<!-- <input type="text" id="answer_field" autofocus> -->
+
+			<div id="multi_col5">
+				<ol id="answer_list">
+				</ol>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="modal fade" tabindex="-1" role="dialog" id="game_over">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	      	<button type="button" class="close" id="quiz_end" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	      	<div class="center-it">
+		        <h2>Game Over!</h2>
+		        <div id="display_score"></div>
+						<div id="play_again">
+							<button class="btn btn-success btn-sm" onclick="reloadMe()">Play Again?</button>
+						</div>
+		      </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="assets/javascripts/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/javascripts/geography.js"></script>
+</body>
+</html>

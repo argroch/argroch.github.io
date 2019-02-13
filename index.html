@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Aaron's Homepage</title>
+
+		<link rel="stylesheet" href="assets/stylesheets/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/stylesheets/darkly.min.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/stylesheets/styles.css" />
+
+	</head>
+	<body>
+		<div class="jumbotron center-it">
+
+			<h1>Aaron Groch</h1>
+			<h3>Coder/Instructor</h3>
+
+			<ul class="nav nav-pills">
+				<li><a href="https://twitter.com/ar_groch" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+	      <li><a href="http://github.com/doc-khateer" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+	      <li><a href="https://www.linkedin.com/in/aaron-groch-2256b38" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+	    </ul>
+
+	  	<div class="center-it">
+	  		<h4><a href="about.html" id="about_link">About Me</a></h4>
+	  	</div>
+
+		</div>
+
+		<div class="container" id="code_container">
+						<div class="row mbot-25">
+				<div class="col-md-4 col-md-offset-4 center-it">
+					<h2>Projects</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2 col-md-offset-4 center-it" id="js_logo">
+					<a data-toggle="modal" data-target="#jsModal">
+						<img src="assets/images/javascript_logo.png" alt="javascript" class="code-logos" />
+					</a>
+				</div>
+
+				<div class="col-md-2 center-it">
+					<a data-toggle="modal" data-target="#railsModal">
+						<img src="assets/images/rails_logo_tall.png" alt="javascript" class="code-logos" />
+					</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- JavaScript Projects Modal -->
+		<div class="modal fade" id="jsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title center-it" id="myModalLabel">JavaScript Projects</h4>
+		      </div>
+		      <div class="modal-body">
+		        <ul class="nav nav-pills">
+	            <li><a href="roshambo.html"><i class="fa fa-hand-scissors-o"></i> Rock, Paper, Scissors</a></li>
+	            <li><a href="fifteenpuzzle.html"><i class="fa fa-puzzle-piece"></i> 15 Puzzle</a></li>
+	            <li><a href="geoquiz.html"><i class="fa fa-globe"></i> GeoQuiz</a></li>
+	          </ul>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- Rails Projects Modal -->
+		<div class="modal fade" id="railsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title center-it" id="myModalLabel">Rails Projects</h4>
+		      </div>
+		      <div class="modal-body">
+		        <ul class="nav nav-pills">
+		            <li><a href="http://marta-app.herokuapp.com" target="_blank"><i class="fa fa-subway"></i> MARTA</a></li>
+		            <li><a href="http://techtalentstore.herokuapp.com" target="_blank"><i class="fa fa-shopping-basket"></i> Tech Talent Store</a></li>
+		            <li><a href="http://yourscene.herokuapp.com" target="_blank"><i class="fa fa-thumbs-up"></i> Your Scene</a></li>
+		        </ul>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascripts/bootstrap.min.js"></script>
+	</body>
+</html>
