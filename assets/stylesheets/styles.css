@@ -108,10 +108,41 @@ td {
     }
 }
 
+#img_hover {
+  position: relative;
+}
 
 #my_pic {
   width: 200px;
   border-radius: 100px;
+  opacity: 1;
+  /*display: block;*/
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+#hover_txt {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 81%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 22px;
+}
+
+#img_hover:hover #my_pic {
+  opacity: 0.3;
+}
+
+#img_hover:hover #hover_txt {
+  opacity: 1;
+}
+
+#about_me_mobile {
+  display: none;
 }
 
 #hometron, #homefoot {
@@ -135,6 +166,18 @@ td {
   width: 75%;
   text-align: center;
   top: 125px;
+}
+
+#rock, #paper, #scissors, #hover_txt {
+  cursor: pointer;
+}
+
+#result_card {
+  margin-top: 35px;
+}
+
+#result_msg {
+  color: green;
 }
 
 #geonav {
@@ -217,5 +260,11 @@ td {
 @media screen and (max-width: 755px) {
   #tablestein {
   	margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 441px) {
+  #about_me_mobile {
+    display: inline;
   }
 }

@@ -5,78 +5,79 @@
 	<link rel="stylesheet" href="assets/stylesheets/styles.css" />
 </head>
 <body>
-	<nav class="navbar navbar-default" id="geonav">
-	  <div class="container-fluid">
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      <a class="navbar-brand" href="index.html">Home</a>
-	    </div>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand grab-llc" href="index.html">Aaron Groch</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav">
-	        <li class="dropdown">
-	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rails Projects <span class="caret"></span></a>
-	          <ul class="dropdown-menu">
-	            <li><a href="http://marta-app.herokuapp.com" target="_blank">MARTA</a></li>
-	            <li><a href="http://techtalentstore.herokuapp.com" target="_blank">Tech Talent Store</a></li>
-	            <li><a href="http://yourscene.herokuapp.com" target="_blank">Your Scene</a></li>
-	          </ul>
-	        </li>
-	        <li class="dropdown">
-	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">JavaScript Projects <span class="caret"></span></a>
-	          <ul class="dropdown-menu">
-	            <li><a href="roshambo.html">Rock, Paper, Scissors</a></li>
-	            <li><a href="fifteenpuzzle.html">15 Puzzle</a></li>
-		          <li><a href="geoquiz.html">GeoQuiz</a></li>
-	          </ul>
-	        </li>
-	      </ul>
-	      
-	      <ul class="nav navbar-nav navbar-right">
-	        <li class="dropdown">
-	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Connect With Me <span class="caret"></span></a>
-	          <ul class="dropdown-menu">
-	            <li><a href="https://twitter.com/ar_groch" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
-	            <li><a href="http://github.com/doc-khateer" target="_blank"><i class="fa fa-github"></i> GitHub</a></li>
-	            <li><a href="https://www.linkedin.com/in/aaron-groch-2256b38" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
-	          </ul>
-	        </li>
-	      </ul>
-	    </div>
-	  </div>
-	</nav>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            JavaScript Projects
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="fifteenpuzzle.html">Fifteen Puzzle</a>
+            <a class="dropdown-item" href="geoquiz.html">Geo Quiz</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Rails Projects
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="http://weathertogether.herokuapp.com" target="_blank">Weather Together</a>
+            <a class="dropdown-item" href="#">Cuisine Compare</a>
+            <a class="dropdown-item" href="#">eCommerce Site</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
 	
-	<div class="well center-it">
-		<h2>Let's Play...</h2>
-	</div>
-
-	<div class="container center-it" id="rps">
+	<div class="container" id="rps">
 		<div class="row">
+			<div class="col-md-4 offset-md-4 text-center">
+				<h2>Let's Play...</h2>
+			</div>
+		</div>
+		<div class="row text-center">
 			<div class="col-md-4">
-				<div class="well" id="rock">
-					<h1>ROCK</h1>
+				<div class="card" id="rock">
+					<div class="card-body">
+						<h1>ROCK</h1>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="well" id="paper">
-					<h1>PAPER</h1>
+				<div class="card" id="paper">
+					<div class="card-body">
+						<h1>PAPER</h1>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="well" id="scissors">
-					<h1>SCISSORS</h1>
+				<div class="card" id="scissors">
+					<div class="card-body">
+						<h1>SCISSORS</h1>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-offset-2 col-md-8">
-				<div class="well invisible" id="result-well">
-					<h1 id="result"></h1>
+			<div class="col-md-6 offset-md-3 text-center">
+				<small>Click on one to start the game. Click on another to continue game.</small>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 offset-md-2">
+				<div class="card text-center" id="result_card">
+					<div class="card-body">
+						<h1 id="result_msg"></h1>
+					</div>
 				</div>
 			</div>
 		</div>

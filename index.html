@@ -34,29 +34,63 @@
 			    </ul>
 		  	</div>
 		  	<div class="col-md-6 text-right top-rows">
-					<img src="assets/images/pinataaron.jpg" alt="picture of Aaron" id="my_pic" />
+		  		<div id="img_hover">
+						<img src="assets/images/pinataaron.jpg" alt="picture of Aaron" id="my_pic" >
+						<div id="hover_txt" data-toggle="modal" data-target="#aboutmeModal">About Me</div>
+					</div>
+					<div id="about_me_mobile">
+						<small>Click on Me!</small>
+					</div>
 		  	</div>
 		  </div>
 
 
-		  <!-- <div class="row">
-		  	<div class="col-md-4 col-md-offset-4">
+		  <div class="row text-center">
+		  	<div class="col-md-4 offset-md-4">
 					<h2>Projects</h2>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-2 col-md-offset-4">
-					<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#jsModal">
-						JavaScript Projects
-					</button>
+			<div class="row text-center">
+				<div class="col-md-2 offset-md-4">
+					<div data-toggle="modal" data-target="#jsModal">
+						<p>
+							<i class="fab fa-js-square fa-3x"></i><br>
+							JavaScript
+						</p>
+					</div>
 				</div>
 
 				<div class="col-md-2">
-					<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#railsModal">
-						Rails Projects
-					</button>
+					<div data-toggle="modal" data-target="#railsModal">
+						<p>
+							<i class="far fa-gem fa-3x"></i><br>
+							Ruby on Rails
+						</p>
+					</div>
 				</div>
-			</div> -->
+			</div>
+
+			<!-- About Me Modal -->
+			<div class="modal fade" id="aboutmeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-body">
+			        <p>
+								I am a web programmer. I like bringing sites and apps to the world wide web!
+							</p>
+							<p>
+								I am currently setting up a web coding bootcamp in San Diego. I have designed the curriculum and will be leading the code immersion program. I previously taught the Code Immersion program (and helped design the curriculum) at Tech Talent South. Before that I was also a TA for the class for three sessions. And way before that I took the course myself!
+							</p>
+							<p>
+								The core tenet of my instruction is teaching web programming with a focus on the Ruby on Rails platform, but also gaining a foundation in HTML, CSS and JavaScript.
+							</p>
+							<button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
+			        	<small>Close</small>
+			        </button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
 
 			<!-- JavaScript Projects Modal -->
 			<div class="modal fade" id="jsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -68,12 +102,16 @@
 			        	<span aria-hidden="true">&times;</span>
 			        </button>
 			      </div>
-			      <div class="modal-body">
-			        <ul class="nav nav-pills">
-		            <li><a href="roshambo.html"><i class="fa fa-hand-scissors-o"></i> Rock, Paper, Scissors</a></li>
-		            <li><a href="fifteenpuzzle.html"><i class="fa fa-puzzle-piece"></i> 15 Puzzle</a></li>
-		            <li><a href="geoquiz.html"><i class="fa fa-globe"></i> GeoQuiz</a></li>
-		          </ul>
+			      <div class="modal-body text-center">
+	            <p>
+	            	<a href="rps.html"><i class="far fa-hand-scissors"></i> Rock, Paper, Scissors</a>
+	            </p>
+	            <p>
+	            	<a href="fifteenpuzzle.html"><i class="fas fa-puzzle-piece"></i> 15 Puzzle</a>
+	            </p>
+	            <p>
+	            	<a href="geoquiz.html"><i class="fas fa-globe-africa"></i> GeoQuiz</a>
+	            </p>
 			      </div>
 			    </div>
 			  </div>
@@ -89,19 +127,24 @@
 			        	<span aria-hidden="true">&times;</span>
 			        </button>
 			      </div>
-			      <div class="modal-body">
-			        <ul class="nav nav-pills">
-			            <li><a href="http://weathertogether.herokuapp.com" target="_blank"><i class="fas fa-cloud-sun"></i> WeatherTogether</a></li>
-			            <li><a href="http://techtalentstore.herokuapp.com" target="_blank"><i class="fas fa-shopping-basket"></i> Tech Talent Store</a></li>
-			            <li><a href="http://yourscene.herokuapp.com" target="_blank"><i class="far fa-thumbs-up"></i> Your Scene</a></li>
+			      <div class="modal-body text-center">
+		            <p>
+		            	<a href="http://weathertogether.herokuapp.com" target="_blank"><i class="fas fa-cloud-sun"></i> WeatherTogether</a>
+		            </p>
+		            <p>
+		            	<a href="#"><i class="fas fa-utensils"></i> Culinary Compare</a> (coming soon)
+		            </p>
+		            <p>
+		            	<a href="#"><i class="fas fa-shopping-basket"></i> eCommerce App</a> (coming soon)
+		            </p>
 			        </ul>
 			      </div>
 			    </div>
 			  </div>
 			</div>
 
-		</div>
 
+		</div>
 		
 
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
