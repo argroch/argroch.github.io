@@ -1,62 +1,78 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Aaron's Homepage</title>
+		<title>Aaron Groch</title>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<link rel="stylesheet" href="assets/stylesheets/bootstrap.min.css" />
-		<link rel="stylesheet" href="assets/stylesheets/darkly.min.css" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="assets/stylesheets/styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/styles.css">
 
 	</head>
 	<body>
-		<div class="jumbotron center-it">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 top-rows">
+					<h1 id="myName">Aaron Groch</h1>
+					<h3 id="myRoles">Coder/Instructor</h3>
 
-			<h1>Aaron Groch</h1>
-			<h3>Coder/Instructor</h3>
-
-			<ul class="nav nav-pills">
-				<li><a href="https://twitter.com/ar_groch" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
-	      <li><a href="http://github.com/argroch" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
-	      <li><a href="https://www.linkedin.com/in/aaron-groch-2256b38" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
-	    </ul>
-
-	  	<div class="center-it">
-	  		<h4><a href="about.html" id="about_link">About Me</a></h4>
-	  	</div>
+					<ul class="nav nav-pills">
+						<li class="nav-item">
+							<a class="nav-link" href="https://twitter.com/ar_groch" target="_blank">
+								<i class="fab fa-twitter fa-2x"></i>
+							</a>
+						</li>
+			      <li class="nav-item">
+			      	<a class="nav-link" href="http://github.com/argroch" target="_blank">
+			      		<i class="fab fa-github fa-2x"></i>
+			      	</a>
+			      </li>
+			      <li class="nav-item">
+			      	<a class="nav-link" href="https://www.linkedin.com/in/aaron-groch-2256b38" target="_blank">
+			      		<i class="fab fa-linkedin fa-2x"></i>
+			      	</a>
+			      </li>
+			    </ul>
+		  	</div>
+		  	<div class="col-md-6 text-right top-rows">
+					<img src="assets/images/pinataaron.jpg" alt="picture of Aaron" id="my_pic" />
+		  	</div>
+		  </div>
 
 		</div>
 
-		<div class="container" id="code_container">
+<!-- 		<div class="container text-center" id="code_container">
 						<div class="row mbot-25">
-				<div class="col-md-4 col-md-offset-4 center-it">
+				<div class="col-md-4 col-md-offset-4">
 					<h2>Projects</h2>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-2 col-md-offset-4 center-it" id="js_logo">
-					<a data-toggle="modal" data-target="#jsModal">
-						<img src="assets/images/javascript_logo.png" alt="javascript" class="code-logos" />
-					</a>
+				<div class="col-md-2 col-md-offset-4">
+					<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#jsModal">
+						JavaScript Projects
+					</button>
 				</div>
 
-				<div class="col-md-2 center-it">
-					<a data-toggle="modal" data-target="#railsModal">
-						<img src="assets/images/rails_logo_tall.png" alt="javascript" class="code-logos" />
-					</a>
+				<div class="col-md-2">
+					<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#railsModal">
+						Rails Projects
+					</button>
 				</div>
 
 			</div>
 
-		</div>
+		</div> -->
 
 		<!-- JavaScript Projects Modal -->
-		<div class="modal fade" id="jsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal fade" id="jsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h4 class="modal-title center-it" id="myModalLabel">JavaScript Projects</h4>
+		        <h4 class="modal-title" id="myModalLabel">JavaScript Projects</h4>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		        	<span aria-hidden="true">&times;</span>
+		        </button>
 		      </div>
 		      <div class="modal-body">
 		        <ul class="nav nav-pills">
@@ -70,25 +86,28 @@
 		</div>
 
 		<!-- Rails Projects Modal -->
-		<div class="modal fade" id="railsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal fade" id="railsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h4 class="modal-title center-it" id="myModalLabel">Rails Projects</h4>
+		        <h4 class="modal-title" id="myModalLabel">Rails Projects</h4>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		        	<span aria-hidden="true">&times;</span>
+		        </button>
 		      </div>
 		      <div class="modal-body">
 		        <ul class="nav nav-pills">
-		            <li><a href="http://marta-app.herokuapp.com" target="_blank"><i class="fa fa-subway"></i> MARTA</a></li>
-		            <li><a href="http://techtalentstore.herokuapp.com" target="_blank"><i class="fa fa-shopping-basket"></i> Tech Talent Store</a></li>
-		            <li><a href="http://yourscene.herokuapp.com" target="_blank"><i class="fa fa-thumbs-up"></i> Your Scene</a></li>
+		            <li><a href="http://weathertogether.herokuapp.com" target="_blank"><i class="fas fa-cloud-sun"></i> WeatherTogether</a></li>
+		            <li><a href="http://techtalentstore.herokuapp.com" target="_blank"><i class="fas fa-shopping-basket"></i> Tech Talent Store</a></li>
+		            <li><a href="http://yourscene.herokuapp.com" target="_blank"><i class="far fa-thumbs-up"></i> Your Scene</a></li>
 		        </ul>
 		      </div>
 		    </div>
 		  </div>
 		</div>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/javascripts/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</body>
 </html>

@@ -1,3 +1,7 @@
+/*@import url("bootstrap/bootstrap.min.css");*/
+@import url("fontawesome/css/all.min.css");
+/*@import url("bootstrap/darkly.min.css");*/
+
 h1 {
 	color: tomato;
 }
@@ -13,8 +17,8 @@ td {
     margin: 3px;
 }
 
-.center-it {
-	text-align: center;
+.top-rows {
+  margin-top: 20px;
 }
 
 .w500 {
@@ -54,16 +58,6 @@ td {
   color: red;
 }
 
-.nav-pills > li {
-  float: none;
-  display: inline-block;
-  *display: inline; /* ie7 fix */
-   zoom: 1; /* hasLayout ie7 trigger */
-}
-
-.nav-pills {
-  text-align: center;
-}
 
 .nav > li > a:focus, .nav > li > a:hover {
   background-color: #222222;
@@ -182,6 +176,14 @@ td {
 
 #code_container {
   margin-bottom: 50px;
+}
+
+#myName {
+  font-size: 5em;
+}
+
+#myRoles {
+  font-size: 2em;
 }
 
 /*#tts_logo {
