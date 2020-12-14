@@ -2,62 +2,48 @@
 <html>
 <head>
 	<title>15 Puzzle</title>
-	<link rel="stylesheet" href="assets/stylesheets/bootstrap.min.css" />
-	<link rel="stylesheet" href="assets/stylesheets/darkly.min.css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	
 	<link rel="stylesheet" href="assets/stylesheets/styles.css" />
 </head>
 <body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand grab-llc" href="index.html">Aaron Groch</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-	<nav class="navbar navbar-default">
-	  <div class="container-fluid">
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      <a class="navbar-brand" href="index.html">Home</a>
-	    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
 
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav">
-	        <li class="dropdown">
-	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rails Projects <span class="caret"></span></a>
-	          <ul class="dropdown-menu">
-	            <li><a href="http://marta-app.herokuapp.com" target="_blank">MARTA</a></li>
-	            <li><a href="http://techtalentstore.herokuapp.com" target="_blank">Tech Talent Store</a></li>
-	            <li><a href="http://yourscene.herokuapp.com" target="_blank">Your Scene</a></li>
-	          </ul>
-	        </li>
-	        <li class="dropdown">
-	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">JavaScript Projects <span class="caret"></span></a>
-	          <ul class="dropdown-menu">
-	            <li><a href="roshambo.html">Rock, Paper, Scissors</a></li>
-	            <li><a href="fifteenpuzzle.html">15 Puzzle</a></li>
-		          <li><a href="geoquiz.html">GeoQuiz</a></li>
-	          </ul>
-	        </li>
-	      </ul>
-	      
-	      <ul class="nav navbar-nav navbar-right">
-	        <li class="dropdown">
-	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Connect With Me <span class="caret"></span></a>
-	          <ul class="dropdown-menu">
-	            <li><a href="https://twitter.com/ar_groch" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
-	            <li><a href="http://github.com/doc-khateer" target="_blank"><i class="fa fa-github"></i> GitHub</a></li>
-	            <li><a href="https://www.linkedin.com/in/aaron-groch-2256b38" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
-	          </ul>
-	        </li>
-	      </ul>
-	    </div>
-	  </div>
-	</nav>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            JavaScript Projects
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="rps.html">Rock Paper Scissors</a>
+            <a class="dropdown-item" href="geoquiz.html">Geo Quiz</a>
+          </div>
+        </li>
 
-	<div class="container">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Rails Projects
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="http://weathertogether.herokuapp.com" target="_blank">Weather Together</a>
+            <a class="dropdown-item" href="#">Cuisine Compare</a>
+            <a class="dropdown-item" href="#">eCommerce Site</a>
+          </div>
+        </li>
+      </ul>
+        <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+    </div>
+  </nav>
+
+  <div class="container" id="fifteenpuzzle_page">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3 center-it">
+				<p>Can you solve the puzzle? Press the shuffle button, then put numbers back in the right order.</p>
 				<button id="shuffler" class="btn btn-danger">Shuffle It</button>
 				<p></p>
 				<table id="tablestein" class="dont-click">
@@ -88,25 +74,25 @@
 				</table>
 			</div>
 		</div>
-	</div>
+	
 
-	<div class="modal fade" tabindex="-1" role="dialog" id="youWin">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-body">
-	      	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	      	<div class="center-it">
-		        <h2>You Won!</h2>
-		        <p>Your name shall resound throughout the hall of champions!</p>
+		<div class="modal fade" tabindex="-1" role="dialog" id="youWin">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		      	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		      	<div class="center-it">
+			        <h2>You Won!</h2>
+			        <p>Your name shall resound throughout the hall of champions!</p>
+			      </div>
 		      </div>
-	      </div>
-	    </div>
-	  </div>
+		    </div>
+		  </div>
+		</div>
 	</div>
 
-	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-  <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="assets/javascripts/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/javascripts/bootstrap/bootstrap.min.js"></script>
   <script type="text/javascript" src="assets/javascripts/fifteenpuzzle.js"></script>
 </body>
 </html>
