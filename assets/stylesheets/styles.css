@@ -91,6 +91,10 @@ td {
   -webkit-animation:blink 1200ms infinite; /* Safari and Chrome */
 }
 
+.projects-hover:hover {
+  opacity: 0.3;
+  cursor: pointer;
+}
 
 
 @keyframes blink {
