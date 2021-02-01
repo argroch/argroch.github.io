@@ -1,5 +1,7 @@
 @import url("bootstrap/bootstrap.min.css");
 @import url("fontawesome/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url("calcstyles.css");
 
 h1 {
 	color: tomato;
@@ -57,7 +59,6 @@ td {
   color: red;
 }
 
-
 .nav > li > a:focus, .nav > li > a:hover {
   background-color: #222222;
 }
@@ -113,6 +114,9 @@ td {
         color:white;
     }
 }
+
+
+
 
 #img_hover {
   position: relative;
@@ -241,6 +245,8 @@ td {
 #fifteenpuzzle_page {
   margin-top: 50px;
 }
+
+
 
 /*#tts_logo {
   background: url("../images/tts-logo-transparent.png") no-repeat;

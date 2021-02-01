@@ -1,0 +1,32 @@
+/* CSS rules for the Calculator page only */
+
+#calc {
+  margin-top: 25px;
+}
+
+#calc button {
+  width: 35px;
+}
+
+.calc-btn {
+  border: 1px solid black;
+  width: 40px;
+}
+
+.calc-container {
+	font-size: 16px;
+	width: 100%;
+  background: LightGray;
+  display: grid;
+  grid-template-columns: repeat(4, 35px;);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+#display_area {
+  width: 200px;
+  margin-bottom: 10px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+

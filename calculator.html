@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Calculator</title>
+  <link rel="stylesheet" href="assets/stylesheets/styles.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand grab-llc" href="index.html">Aaron Groch</a>
+    <div class="navbar-toggler" type="div" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="navbar-toggler-icon"></div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="div" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            JavaScript Projects
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="rps.html">Rock Paper Scissors</a>
+            <a class="dropdown-item" href="geoquiz.html">Geo Quiz</a>
+            <a class="dropdown-item" href="fifteenpuzzle.html">Fifteen Puzzle</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="div" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Rails Projects
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="http://weathertogether.herokuapp.com" target="_blank">Weather Together</a>
+            <a class="dropdown-item" href="http://chatterful.herokuapp.com" target="_blank">Chatterful</a>
+            <a class="dropdown-item" href="#">eCommerce Site (Soon)</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container text-center" id="calc">
+		<input id="display_area"></input><br>
+		<button value="(" id="open_paran" class="">(</button>
+		<button value=")" id="close_paran" class="">)</button>
+		<button id="clear_last" class="">CE</button>
+		<button id="all_clear" class="">AC</button><br>
+		<button value="7" id="seven" class="">7</button>
+		<button value="8" id="eight" class="">8</button>
+		<button value="9" id="nine" class="">9</button>
+		<button value="/" id="divide" class="">/</button><br>
+		<button value="4" id="four" class="">4</button>
+		<button value="5" id="five" class="">5</button>
+		<button value="6" id="six" class="">6</button>
+		<button value="*" id="multiply" class="">x</button><br>
+		<button value="1" id="one" class="">1</button>
+		<button value="2" id="two" class="">2</button>
+		<button value="2" id="three" class="">3</button>
+		<button value="-" id="subtract" class="">-</button><br>
+		<button value="0" id="zero" class="">0</button>
+		<button value="." id="decimal" class="">.</button>
+		<button value="=" id="equals" class="">=</button>
+		<button value="+" id="add" class="">+</button><br>
+	</div>
+
+
+  
+		<input id="display_area"></input><br>
+		<div class="calc-container" id="calc">
+		<div value="(" id="open_paran" class="calc-btn">(</div>
+		<div value=")" id="close_paran" class="calc-btn">)</div>
+		<div id="clear_last" class="calc-btn">CE</div>
+		<div id="all_clear" class="calc-btn">AC</div><br>
+		<div value="7" id="seven" class="calc-btn">7</div>
+		<div value="8" id="eight" class="calc-btn">8</div>
+		<div value="9" id="nine" class="calc-btn">9</div>
+		<div value="/" id="divide" class="calc-btn">/</div><br>
+		<div value="4" id="four" class="calc-btn">4</div>
+		<div value="5" id="five" class="calc-btn">5</div>
+		<div value="6" id="six" class="calc-btn">6</div>
+		<div value="*" id="multiply" class="calc-btn">x</div><br>
+		<div value="1" id="one" class="calc-btn">1</div>
+		<div value="2" id="two" class="calc-btn">2</div>
+		<div value="2" id="three" class="calc-btn">3</div>
+		<div value="-" id="subtract" class="calc-btn">-</div><br>
+		<div value="0" id="zero" class="calc-btn">0</div>
+		<div value="." id="decimal" class="calc-btn">.</div>
+		<div value="=" id="equals" class="calc-btn">=</div>
+		<div value="+" id="add" class="calc-btn">+</div><br>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="calc.js"></script>
+	<script type="text/javascript" src="assets/javascripts/bootstrap/bootstrap.min.js"></script>
+  <script src="assets/javascripts/calc.js"></script>
+</body>
+</html>
