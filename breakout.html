@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>BREAKOUT!</title>
+	<link rel="stylesheet" href="assets/stylesheets/styles.css" />
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand grab-llc" href="index.html">Aaron Groch</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            JavaScript Projects
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="rps.html">Rock Paper Scissors</a>
+            <a class="dropdown-item" href="geoquiz.html">Geo Quiz</a>
+            <a class="dropdown-item" href="fifteenpuzzle.html">Fifteen Puzzle</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Rails Projects
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="http://weathertogether.herokuapp.com" target="_blank">Weather Together</a>
+            <a class="dropdown-item" href="http://chatterful.herokuapp.com" target="_blank">Chatterful</a>
+            <a class="dropdown-item" href="#">eCommerce Site (Soon)</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container" id="breakout_page">
+  	<div class="row">
+	  	<div class="col-md-4 offset-md-4 text-center">
+	  		<p>The classic arcade game... now in your browser!</p>
+	  		<p>Can you contain your excitement long enough<br> to break all the blocks?</p>
+	  	</div>
+	  </div>
+  	<div class="row">
+	  	<div class="col-md-4 offset-md-4 text-center">
+				<div id="msg_area"></div>
+				<button id="reload_btn" class="invisible btn btn-primary" onclick="reloader()">Play Again?</button>				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<canvas id="play_area" width="480" height="320" class="invisible">
+				</canvas>
+				<div class="dotgoth text-center"><p>BREAKOUT!</p></div>
+			</div>
+		</div>
+		<div class="row">
+	  	<div class="col-md-4 offset-md-4 text-center">
+				<button id="start_btn" class="btn btn-success" onclick="startGame()">Start Game</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/javascripts/bootstrap/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/javascripts/breakout.js"></script>
+</body>
+</html>
