@@ -148,8 +148,10 @@ function draw() {
 			if(!lives) {
 				var msgArea = document.getElementById("msg_area");
 				var reloadBtn = document.getElementById("reload_btn");
-				msgArea.innerHTML += "<p><strong>GAME OVER!</strong></p>";
+        var pa = document.getElementById("play_area");
+				msgArea.innerHTML += "<p><strong>GAME OVER!</strong></p><p>Nice try, though.</p>";
 				reloadBtn.classList.remove("invisible");
+        pa.classList.add("invisible");
 				return;
 			} else {
 				sleep(2);
@@ -179,6 +181,8 @@ function startGame() {
 	draw();
 	var startBtn = document.getElementById("start_btn");
 	startBtn.classList.add("invisible");
+  var gameTitle = document.getElementById("breakout_title");
+  gameTitle.classList.add("invisible");
 }
 
 function reloader() {

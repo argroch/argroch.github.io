@@ -262,6 +262,11 @@ canvas {
   margin-top: 50px;
 }
 
+#breakout_title {
+  font-size: 50px;
+  color: red;
+}
+
 
 
 /*#tts_logo {
