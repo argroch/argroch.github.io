@@ -10,10 +10,10 @@ var paddleWidth = 75;
 var paddleX = (playArea.width-paddleWidth)/2;
 var rightPressed = false;
 var leftPressed = false;
-var brickRowCount = 3;
+var brickRowCount = 6;
 var brickColumnCount = 5;
 var brickWidth = 75;
-var brickHeight = 20;
+var brickHeight = 10;
 var brickPadding = 10;
 var brickOffsetTop = 30;
 var brickOffsetLeft = 30;
@@ -73,6 +73,7 @@ function collisionDetection() {
             reloadBtn.classList.remove("invisible");
             var canvas = document.getElementById("play_area");
             canvas.classList.add("invisible");
+            return;
           }
         }
       }
