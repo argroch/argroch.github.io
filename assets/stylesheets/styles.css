@@ -112,6 +112,10 @@ canvas {
   margin-top: 25px;
 }
 
+.mtop-50 {
+  margin-top: 50px;
+}
+
 .state-name {
   text-transform: capitalize;
 }
@@ -290,6 +294,10 @@ canvas {
 #breakout_title {
   font-size: 50px;
   color: red;
+}
+
+#technifornia_logo {
+  width: 50%;
 }
 
 
