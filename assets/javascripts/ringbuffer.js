@@ -7,7 +7,7 @@ class Ring extends Array{
   }
 
   atLimit() {
-    return (this.data.length == this.limit) ? true : false;
+    return (this.length == this.limit) ? true : false;
   }
 
   addTo(value) {

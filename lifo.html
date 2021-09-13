@@ -3,23 +3,49 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Practice</title>
+    <title>Last In, First Out</title>
     <link rel="stylesheet" href="assets/stylesheets/styles.css" />
   </head>
   <body>
 
-    <div>
-
-      <input type="text" name="item" value="" placeholder="Enter item to add to collection" id="user_val" autofocus />
-      <button id="submit" onClick="addToRing()">Submit</button>
-      
-      <div>
-        <h3>Our Current Collection:</h3>
-        <ul id="collection"></ul>  
+    <div class="container">
+      <div class="row mtop-25">
+        <div class="col-md-12">
+          <h2>First In, Last Out</h2>
+          
+        </div>
       </div>
-      <div id="in_memorial" class="invisible">
-        <h5>Gone, But Not Forgotten:</h5>
-        <p id="goodbyes"></p>
+      <div class="row">
+        <div class="col-md-12 mbot-50">
+          <p>
+            Help me create a data collection that only takes a set amount of items, and replaces the first item in the collection with the next new item entered once the limit of items is reached. <strong>In this example, please enter names.</strong>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <input type="number" name="limit" value="" placeholder="Item Limit" id="limit_val" class="form-control" />  <button class="btn btn-warning">Coming Soon</button>
+          </div>
+          <div class="form-group">
+            <input type="text" name="item" value="" placeholder="Enter a name..." id="user_val" class="form-control" autofocus />
+            <button class="btn btn-primary" id="submit" onClick="addToRing()">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8">
+          <h3>Our Current Collection:</h3>
+          <ul id="collection"></ul>  
+        </div>
+      </div>
+
+      <div id="in_memorial" class="row invisible">
+        <div class="col-md-8">
+          <h5>Gone, But Not Forgotten:</h5>
+          <p id="goodbyes"></p>
+        </div>
       </div>
     </div>
 

@@ -63,6 +63,18 @@ canvas {
   width: 250px;
 }
 
+.rps-cards {
+  transition: box-shadow .3s;
+}
+
+.rps-cards:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.rps-cards:active {
+  background: #C5DCDF;
+}
+
 .invisible {
   display: none;
 }
@@ -94,6 +106,10 @@ canvas {
 
 .mbot-50 {
   margin-bottom: 50px;
+}
+
+.mtop-25 {
+  margin-top: 25px;
 }
 
 .state-name {
@@ -131,8 +147,17 @@ canvas {
     }
 }
 
+/* IDs */
 
+#limit_val {
+  width: 200px;
+  display: inline-block;
+}
 
+#user_val {
+  width: 500px;
+  display: inline-block;
+}
 
 #img_hover {
   position: relative;

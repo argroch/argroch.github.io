@@ -10,6 +10,8 @@ function compChoice() {
 	}
 }
 
+var tieMsg = "<h2><i class='fab fa-black-tie'></i> It's a tie!</h2>";
+
 $('#result_card').hide();
 
 $('#rock').click(function(){
@@ -17,11 +19,11 @@ $('#rock').click(function(){
 	var computerChoice = compChoice();
 	$('#result_card').show();
 	if(computerChoice === "rock"){
-		$('#result_msg').html("It's a tie.");
+		$('#result_msg').html(tieMsg);
 	} else if(computerChoice === "paper"){
-		$('#result_msg').html("Paper covers rock. You lose.");
+		$('#result_msg').html("<h2><i class='far fa-sad-tear'></i> Huh?!</h2><h3>Paper covers rock: You lose</h3>");
 	} else {
-		$('#result_msg').html("Rock crushes scissors. You win!");
+		$('#result_msg').html("<h2><i class='far fa-laugh-beam'></i> Boom!</h2><h3>Rock crushes scissors: You win!</h3>");
 	}
 });
 
@@ -31,14 +33,13 @@ $('#paper').click(function(){
 	$('#result_card').show();
 
 	if(computerChoice == "paper"){
-		// alert("It's a tie.");
-		$('#result_msg').html("It's a tie.");
+		$('#result_msg').html(tieMsg);
 	} else if(computerChoice == "rock"){
 		// alert("Paper covers rock. You win!");
-		$('#result_msg').html("Paper covers rock. You win!");
+		$('#result_msg').html("<h2><i class='far fa-laugh-squint'></i> Yes!</h2><h3>Paper covers rock: You win!</h3>");
 	} else {
 		// alert("Scissors cut paper. You lose.");
-		$('#result_msg').html("Scissors cut paper. You lose.");
+		$('#result_msg').html("<h2><i class='fas fa-band-aid'></i> Ouch!</h2><h3>Scissors cut paper: You lose.</h3>");
 	}
 });
 
@@ -48,10 +49,10 @@ $('#scissors').click(function(){
 	$('#result_card').show();
 
 	if(computerChoice == "scissors"){
-		$('#result_msg').html("It's a tie.");
+		$('#result_msg').html(tieMsg);
 	} else if(computerChoice == "paper"){
-		$('#result_msg').html("Scissors cut paper. You win!");
+		$('#result_msg').html("<h2><i class='fas fa-cut'></i> Slash!</h2><h3>Scissors cut paper: You win!</h3>");
 	} else {
-		$('#result_msg').html("Rock crushes scissors. You lose.");
+		$('#result_msg').html("<h2><i class='far fa-sad-cry'></i> Oof!</h2><h3>Rock crushes scissors: You lose.</h3>");
 	}
 });
