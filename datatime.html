@@ -1,0 +1,127 @@
+<!DOCTYPE html lang="en" dir="ltr">
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>It's Data Time</title>
+
+	<link rel="stylesheet" href="assets/stylesheets/styles.css" />
+</head>
+<body id="data_page">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand grab-llc" href="index.html">Aaron Groch</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            JavaScript Projects
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          	<a class="dropdown-item" href="breakout.html">Breakout!</a>
+            <a class="dropdown-item" href="fifteenpuzzle.html">Fifteen Puzzle</a>
+            <a class="dropdown-item" href="geoquiz.html">Geo Quiz</a>
+						<a class="dropdown-item" href="rps.html">Rock Paper Scissors</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Rails Projects
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="http://weathertogether.herokuapp.com" target="_blank">Weather Together</a>
+            <a class="dropdown-item" href="http://chatterful.herokuapp.com" target="_blank">Chatterful</a>
+            <a class="dropdown-item" href="#">eCommerce Site</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+	<div class="row" id="data_top">
+		<div class="col-6 offset-3 text-center ptop-50">
+			<h1>
+				The Data Speak!
+			</h1>
+			<!-- Yes, this is a Star Wars reference -->
+			<h2>Exploring APIs w/ JavaScript</h2>
+		</div>
+	</div>
+	<div id="choice_area" class="data-choices">
+		<div class="row" id="data_choices_top">
+			<div class="col-10 offset-1 text-center">
+				<p>This page is just to show off using JavaScript to access APIs and manipulate the data pulled to create user-friendly structures.</p>
+				<p>Choose your data path:</p>
+				
+			</div>
+		</div>
+		<div class="row text-center pbot-50" id="data_choices_bottom">
+			<div class="col-3 offset-3">
+				<div id="start_activity" class="data-circles no-decor">
+					<p>
+						Activity<br />
+						Suggestions
+					</p>
+				</div>	
+			</div>
+			<div class="col-3">
+				<div id="start_pop_compare" class="data-circles no-decor">
+					<p>
+						Population<br />
+						Comparisons
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Area where Bored API activities are displayed, after a button is pushed to confirm -->
+	<div id="activity_area" class="data-choices invisible">
+		<div class="row">
+			<div class="col-6 offset-3 text-center">
+				<p id="bored_explanation">Bored, and have no idea what to do? We've got suggestions! Let the Bored API guide you towards your next activity. The reccomendations are free...<br />and so are some of the activities!</p>
+				<button id="suggest_activity" class="btn btn-success btn-lg">Give Me Something to Do!</button>
+				<div class="d-flex justify-content-center">
+					<div class="spinner-border invisible" role="status" id="loading">
+							<span class="sr-only">Loading...</span>
+					</div>
+				</div>
+				<div id="display_activity"></div>
+			</div>
+		</div>
+		<div id="refresh_return" class="row invisible">
+			<div id="return_to_choices" class="col-3 offset-3 text-center">
+				<i class="fas fa-arrow-circle-left fa-2x the-hand"></i>
+				<p class="the-hand">Return to API Choices</p>
+			</div>
+			<div id="refresh_activity" class="col-3 text-center">
+				<i class="fas fa-sync-alt fa-2x the-hand"></i><br />
+				<p class="the-hand">Get Another Activity</p>
+			</div>
+			
+		</div>
+	</div>
+
+	<div id="pop_compare_area" class="data-choices invisible text-center">
+		<h4>Coming Soon!</h4>
+		<div id="return2choices" class="mtop-25">
+			<i class="fas fa-arrow-circle-left fa-2x the-hand"></i>
+			<p class="the-hand">Return to API Choices</p>
+		</div>
+	</div>
+
+<!-- <h1>Random Activity</h1>
+<table id="activity"></table> -->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/javascripts/bootstrap/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="text/javascript" src="assets/javascripts/bored_api.js"></script>
+  <script type="text/javascript" src="assets/javascripts/charts.js"></script>
+</body>
+</html>

@@ -20,12 +20,6 @@ td {
     margin: 3px;
 }
 
-canvas { 
-  background: #eee;
-  display: block;
-  margin: 10px auto;
-}
-
 .dotgoth {
   font-family: 'DotGothic16', sans-serif;
 }
@@ -58,6 +52,10 @@ canvas {
   background: none;
 }
 
+.the-hand {
+  cursor: pointer;
+}
+
 .rps-pics {
   height: 250px;
   width: 250px;
@@ -76,7 +74,11 @@ canvas {
 }
 
 .invisible {
-  display: none;
+  display: none !important;
+}
+
+.no-decor {
+  text-decoration: none !important;
 }
 
 .correct {
@@ -114,6 +116,14 @@ canvas {
 
 .mtop-50 {
   margin-top: 50px;
+}
+
+.ptop-50 {
+  padding-top: 50px;
+}
+
+.pbot-50 {
+  padding-bottom: 50px;
 }
 
 .state-name {
@@ -296,10 +306,120 @@ canvas {
   color: red;
 }
 
+#play_area { 
+  background: #eee;
+  display: block;
+  margin: 10px auto;
+}
+
 #technifornia_logo {
   width: 50%;
 }
 
+/* DataTime page IDs and Classes */
+
+#data_page {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+	background: url("../images/cool-library.jpg") no-repeat center center fixed;
+  /* background: url('data-better-idea.jpg'); */
+  background-color: #cccccc;
+  /* background-position: center;
+  background-repeat: no-repeat; */
+  background-size: cover;
+  /* position: relative; */
+}
+
+#data_top {
+  padding-top: 20px;
+  padding-bottom: 120px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#data_top h1 {
+  color: white;
+  font-size: 86px;
+}
+
+#data_top h2 {
+  font-size: 48px;
+}
+
+#activity_area {
+  height: 100%;
+}
+
+#pop_compare_area {
+  height: 100%;
+}
+
+#activity_card {
+  padding: 40px;
+  margin-bottom: 30px;
+  background-color: #D3EFF6;
+}
+
+#bored_explanation {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#return_to_choices {
+  color: red;
+}
+
+#refresh_activity {
+  color: green;
+}
+
+#loading {
+  color: orange;
+}
+
+.gray-dollar {
+  color: gray;
+}
+
+.data-choices {
+  padding-top: 30px;
+  background-color: white;
+}
+
+.data-circles {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  background-color: #C5DCDF;
+  border: 1px solid #C5DCDF;
+  border-radius: 50%;
+  transition: box-shadow .3s;
+  cursor: pointer;
+}
+
+.data-circles p {
+  margin-top: 60px;
+  font-size: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.data-circles a {
+  text-decoration: none;
+}
+
+.data-circles:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.data-circles:active {
+  background: #86b2b8;
+}
+
+#return2choices {
+  color: red;
+}
 
 
 /*#tts_logo {
@@ -338,3 +458,17 @@ canvas {
     display: inline;
   }
 }
+
+/* Unsplash Photo Credits
+
+cool-library.jpg
+Photo by <a href="https://unsplash.com/@tofi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tobias Fischer</a> on <a href="https://unsplash.com/s/photos/data?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+graph-on-paper.jpg
+Photo by <a href="https://unsplash.com/@isaacmsmith?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Isaac Smith</a> on <a href="https://unsplash.com/s/photos/data?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+data-better-idea.jpg
+Photo by <a href="https://unsplash.com/@franki?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Franki Chamaki</a> on <a href="https://unsplash.com/s/photos/data?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+
+*/
