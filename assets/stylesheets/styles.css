@@ -349,6 +349,7 @@ td {
 
 #activity_area {
   height: 100%;
+  padding-bottom: 300px;
 }
 
 #pop_compare_area {
