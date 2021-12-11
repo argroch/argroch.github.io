@@ -143,6 +143,68 @@ td {
   cursor: pointer;
 }
 
+.js-yellow {
+  color: #f7df1e;
+}
+
+.html-orange {
+  color: #FFA500;
+}
+
+.css-blue {
+  color: #000080;
+}
+
+.ruby-red {
+  color: #701516;
+}
+
+.react-blue {
+  color: #61DBFB;
+}
+
+.python-blue {
+  color: #3572A5;
+}
+
+.social-media-links {
+  color: black;
+}
+
+.fa-twitter:hover {
+  color: #1DA1F2;
+}
+
+.fa-github:hover {
+  color: #F4CBB2;
+}
+
+.fa-linkedin:hover {
+  color: #0072b1;
+}
+
+.btn-forest {
+  color: #fff;
+  background-color: #227C66;
+  border-color: #227C66;
+}
+
+.project-names {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.project-modules {
+  padding: 20px;
+  border-bottom: 1px solid lightgrey;
+}
+
+/* Remove black background when hovering over nav-items */
+.nav>li>a:focus, .nav>li>a:hover {
+  text-decoration: none;
+  background-color: transparent !important;
+}
+
 
 @keyframes blink {
     from {
@@ -162,6 +224,29 @@ td {
 }
 
 /* IDs */
+
+#mobilePhoneLayout {
+  display: none;
+}
+
+#homerow {
+  margin-top: 50px;
+}
+
+#homeHeader {
+  font-size: 4em;
+}
+
+#homeLocation {
+  margin-top: 20px;
+  padding-left: 10px;
+  color: grey;
+  font-size: 14px;
+}
+
+#aboutMe, #otherLinks {
+  margin-top: 20px;
+}
 
 #limit_val {
   width: 200px;
@@ -371,6 +456,10 @@ td {
   color: red;
 }
 
+#return2choices {
+  color: red;
+}
+
 #refresh_activity {
   color: green;
 }
@@ -418,9 +507,7 @@ td {
   background: #86b2b8;
 }
 
-#return2choices {
-  color: red;
-}
+
 
 
 /*#tts_logo {
@@ -445,6 +532,38 @@ td {
 
   #js_logo {
     margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #aboutMe { padding-left: 20px; }
+}
+
+@media only screen and (max-width: 760px) {
+  #tabletDesktopLayout { display: none; }
+
+  #mobilePhoneLayout { display: inline; }
+
+  #mobileSocialMedia {
+    display: flex;
+    justify-content: center;
+  }
+
+  #choiceButtons {
+    display: inline;
+  }
+
+  #mobileAboutMe {
+    margin-top: 20px;
+    font-size: 17px;
+  }
+
+  #mobileProjectList {
+    margin-top: 20px;
+  }
+
+  #mobileOtherLinks {
+    margin-top: 20px;
   }
 }
 
