@@ -199,6 +199,10 @@ td {
   border-bottom: 1px solid lightgrey;
 }
 
+.rails-projects {
+  text-decoration: line-through !important;
+}
+
 /* Remove black background when hovering over nav-items */
 .nav>li>a:focus, .nav>li>a:hover {
   text-decoration: none;
