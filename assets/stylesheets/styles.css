@@ -252,7 +252,7 @@ td {
 
 /* IDs */
 
-#mobilePhoneLayout {
+#mobilePhoneLayout, #resumeMobileLayout {
   display: none;
 }
 
@@ -517,10 +517,6 @@ td {
   margin: 0px 15px;
 }
 
-#resume_main {
-  
-}
-
 #resume_left {
   border-right: 1px solid #E6E0DF;
 }
@@ -539,6 +535,16 @@ td {
 
 #contact_info {
   padding-top: 20px;
+}
+
+#contact_info_mobile, #location_mobile {
+  text-align: center;
+  padding-top: 15px;
+}
+
+#location_mobile {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E6E0DF;
 }
 
 #skills, #education {
@@ -567,14 +573,37 @@ td {
   margin-top: 30px;
 }
 
+#overview_mobile {
+  padding: 30px;
+  text-align: center;
+  border-bottom: 1px solid #E6E0DF;
+}
+
 #work_experience {
   padding-top: 40px;
+}
+
+#experience_mobile, #skills_mobile {
+  padding: 30px;
+  border-bottom: 1px solid #E6E0DF;
+}
+
+#skills_mobile .row {
+  padding-top: 20px;
+}
+
+#education_mobile {
+  padding: 30px;
 }
 
 #resume_footer {
   font-style: italic;
   text-align: center;
   margin-top: 50px;
+}
+
+.resume-icons-mobile {
+  margin-right: 5px;
 }
 
 .job-listing {
@@ -630,8 +659,9 @@ td {
   background: #86b2b8;
 }
 
-
-
+.text-center {
+  text-align: center;
+}
 
 /*#tts_logo {
   background: url("../images/tts-logo-transparent.png") no-repeat;
@@ -640,7 +670,6 @@ td {
   height: 320px;
 }
 */
-
 
 @media screen and (max-width: 1200px) {
   #tablestein {
@@ -687,6 +716,31 @@ td {
 
   #mobileOtherLinks {
     margin-top: 20px;
+  }
+
+  #resumeDesktopLayout {
+    display: none;
+  }
+
+  #resumeMobileLayout {
+    display: inline;
+  }
+
+  #resume_name {
+    font-size: 60px;
+  }
+
+  #resume_top {
+    padding-left: 20px;
+    border-bottom: 1px solid #E6E0DF;
+  }
+
+  #tts {
+    margin-top: 30px;
+  }
+
+  #resume_footer {
+    margin-top: 0;
   }
 }
 
